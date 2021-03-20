@@ -72,7 +72,7 @@ const Header = () => {
                         src={auth.currentUser.photoURL || profileImg}
                         className={classes.small}
                       />
-                      <span className="d-none d-md-block ml-1 text-danger">
+                      <span className="ml-1 text-danger">
                         {auth.currentUser.displayName}
                       </span>
                     </div>
