@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Destination.css";
 import { useParams } from "react-router";
 import { jsonData } from "./../../Resources/JsonData/JsonData";
-import mapImg from "./../../Resources/images/Map.png";
 import { Button, Card, Container, Form, FormControl } from "react-bootstrap";
 import moment from "moment";
 import { useForm } from "react-hook-form";
@@ -158,9 +157,3 @@ const Destination = () => {
 };
 
 export default Destination;
-
-/***
- *  <div style={{ maxWidth: "765px" }}>
-          <img src={mapImg} className="img-fluid" alt="map" />
-        </div>
- */
