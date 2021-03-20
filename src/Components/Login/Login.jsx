@@ -1,7 +1,6 @@
 import React from "react";
 import "./Login.css";
 import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import LoginContent from "../LoginContent/LoginContent";
 const Login = () => {
   return (
