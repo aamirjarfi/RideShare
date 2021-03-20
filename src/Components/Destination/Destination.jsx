@@ -15,6 +15,7 @@ import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
 import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
+import GoogleMapComponent from "../GoogleMap/GoogleMapComponent";
 const Destination = () => {
   const [vehicleData, setVehicleData] = useState({});
 
@@ -44,42 +45,42 @@ const Destination = () => {
         <div className="p-4" style={{ maxWidth: "100vw" }}>
           {destinationData.pickFrom ? (
             <div className="w-100">
-            <Card>
-              <Card.Body className="bg-dark text-start">
-                <div className="bg-danger">
-                  <Timeline>
-                    <TimelineItem>
-                      <TimelineSeparator>
+              <Card>
+                <Card.Body className="bg-dark text-start">
+                  <div className="bg-danger">
+                    <Timeline>
+                      <TimelineItem>
+                        <TimelineSeparator>
+                          <TimelineDot />
+                          <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                          <h4>{destinationData.pickFrom}</h4>
+                        </TimelineContent>
+                      </TimelineItem>
+                      <TimelineItem className="control_height">
                         <TimelineDot />
-                        <TimelineConnector />
-                      </TimelineSeparator>
-                      <TimelineContent>
-                        <h4>{destinationData.pickFrom}</h4>
-                      </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem className="control_height">
-                      <TimelineDot />
-                      <TimelineContent>
-                        <h4>{destinationData.pickTo}</h4>
-                      </TimelineContent>
-                    </TimelineItem>
-                  </Timeline>
-                </div>
-                <div>
-                  <>
-                    {vehicleData.map((vehicle) => {
-                      return (
-                        <section key={vehicle.id}>
-                          <DestinationVehicleCard vehicle={vehicle} />
-                          <DestinationVehicleCard vehicle={vehicle} />
-                          <DestinationVehicleCard vehicle={vehicle} />
-                        </section>
-                      );
-                    })}
-                  </>
-                </div>
-              </Card.Body>
-            </Card>
+                        <TimelineContent>
+                          <h4>{destinationData.pickTo}</h4>
+                        </TimelineContent>
+                      </TimelineItem>
+                    </Timeline>
+                  </div>
+                  <div>
+                    <>
+                      {vehicleData.map((vehicle) => {
+                        return (
+                          <section key={vehicle.id}>
+                            <DestinationVehicleCard vehicle={vehicle} />
+                            <DestinationVehicleCard vehicle={vehicle} />
+                            <DestinationVehicleCard vehicle={vehicle} />
+                          </section>
+                        );
+                      })}
+                    </>
+                  </div>
+                </Card.Body>
+              </Card>
             </div>
           ) : (
             <div className="w-100">
@@ -145,8 +146,11 @@ const Destination = () => {
             </div>
           )}
         </div>
-        <div style={{ maxWidth: "765px" }}>
-          <img src={mapImg} className="img-fluid" alt="map" />
+        <div className="w-100">
+          <GoogleMapComponent
+            destination={destinationData.pickTo}
+            origin={destinationData.pickFrom}
+          />
         </div>
       </Container>
     </>
@@ -156,25 +160,7 @@ const Destination = () => {
 export default Destination;
 
 /***
- * {destinationData.pickFrom && (
-            <Card style={{ width: "400px" }}>
-              <Card.Body className="text-center">
-                <p>{destinationData.pickFrom}</p>
-                <p>{destinationData.pickTo}</p>
-                <div>
-                  <>
-                    {vehicleData.map((vehicle) => {
-                      return (
-                        <>
-                          <DestinationVehicleCard vehicle={vehicle} />
-                          <DestinationVehicleCard vehicle={vehicle} />
-                          <DestinationVehicleCard vehicle={vehicle} />
-                        </>
-                      );
-                    })}
-                  </>
-                </div>
-              </Card.Body>
-            </Card>
-          )}
+ *  <div style={{ maxWidth: "765px" }}>
+          <img src={mapImg} className="img-fluid" alt="map" />
+        </div>
  */
