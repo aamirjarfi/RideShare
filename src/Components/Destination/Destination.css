@@ -1,0 +1,23 @@
+.vehicle_info_part_1 p,
+.vehicle_info_part_2 p {
+  margin-bottom: 0 !important;
+}
+
+.MuiTimelineItem-root,
+.MuiTimelineItem-missingOppositeContent:before {
+  padding: 2px !important;
+}
+.MuiTimelineItem-root p {
+  margin-bottom: none !important;
+}
+.MuiTimelineItem-missingOppositeContent:before {
+  flex: none !important;
+  padding: none !important;
+}
+.control_height {
+  min-height: 30px !important;
+}
+
+.MuiTimelineSeparator-root {
+  height: 90px;
+}

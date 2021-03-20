@@ -1,0 +1,11 @@
+.or_text {
+  width: 85%;
+  text-align: center;
+  border-bottom: 1px solid #df4759;
+  line-height: 0.1em;
+  margin: 40px auto;
+}
+.or_text span {
+  background: #fff;
+  padding: 0 10px;
+}

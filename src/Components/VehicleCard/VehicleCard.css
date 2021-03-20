@@ -1,0 +1,14 @@
+.responsive_font {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 360px) {
+  .responsive_font {
+    font-size: 1.125rem;
+  }
+}
+
+.hover_style_apply:hover {
+  transform: scale(1.1);
+}
