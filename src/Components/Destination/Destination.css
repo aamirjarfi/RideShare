@@ -21,3 +21,13 @@
 .MuiTimelineSeparator-root {
   height: 90px;
 }
+
+.width_control {
+  width: 400px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .width_control {
+    width: auto;
+  }
+}

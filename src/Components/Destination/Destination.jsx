@@ -45,7 +45,10 @@ const Destination = () => {
           {destinationData.pickFrom ? (
             <div className="w-100">
               <Card>
-                <Card.Body className="bg-dark text-start">
+                <Card.Body
+                  className="bg-dark text-start"
+                  style={{ minWidth: "300px" }}
+                >
                   <div className="bg-danger">
                     <Timeline>
                       <TimelineItem>

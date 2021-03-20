@@ -6,7 +6,7 @@ const DestinationVehicleCard = ({ vehicle }) => {
   const { id, name, picture, rideCost } = vehicle;
   return (
     <Card
-      className="mb-2 width_control"
+      className="m-2"
     >
       <Card.Body className="d-flex align-items-center justify-content-between">
         <div className="vehicle_info_part_1 d-flex align-items-center">

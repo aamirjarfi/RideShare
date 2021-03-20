@@ -66,7 +66,7 @@ const Header = () => {
                     onClick={handleClick}
                     style={{ cursor: "pointer" }}
                   >
-                    <div className="d-flex">
+                    <div className="d-flex align-items-center">
                       <Avatar
                         alt="Profile"
                         src={auth.currentUser.photoURL || profileImg}

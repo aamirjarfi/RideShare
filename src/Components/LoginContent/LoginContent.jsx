@@ -161,7 +161,7 @@ const LoginContent = () => {
                   </span>
                 </Form.Label>
                 <Form.Control
-                  placeholder="Type Your Password"
+                  placeholder="Type Your Confirm Password"
                   name="confirm_password"
                   ref={register}
                 ></Form.Control>
