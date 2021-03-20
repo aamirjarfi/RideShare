@@ -4,6 +4,6 @@
 
 ## Screenshot
 
-[![Capture.png](https://i.postimg.cc/LX0hJDTs/Capturefortelerj.png)](https://postimg.cc/k6K7ZxLr)
+[![website-SSFor-GIth.png](https://i.postimg.cc/Bv71FJZs/website-SSFor-GIth.png)](https://postimg.cc/GBY2wwsS)
 
 ### [Live Site Link](https://rideshare-c77d0.web.app)
