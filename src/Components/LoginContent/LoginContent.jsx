@@ -204,7 +204,7 @@ const LoginContent = () => {
         <div className="w-75 m-2">
           <button
             onClick={() => socialMediaLogin(GoogleProvider, setError, redirect)}
-            className="btn google_btn_style rounded-pill w-100"
+            className="btn google_btn_style rounded-pill w-100 btn_flex_style"
           >
             {/* <FontAwesomeIcon size="2x" icon={faGoogle} className="float-left" /> */}
             <img
@@ -213,7 +213,7 @@ const LoginContent = () => {
               alt=""
               className="float-left rounded-pill pt-1"
             />
-            <span className="d-block pt-1">Continue with Google</span>
+            <span className="d-block pt-1 mx-auto">Continue with Google</span>
           </button>
         </div>
         <div className="w-75 m-2">
@@ -221,7 +221,7 @@ const LoginContent = () => {
             onClick={() =>
               socialMediaLogin(FacebookProvider, setError, redirect)
             }
-            className="btn rounded-pill w-100 fb_btn_style"
+            className="btn rounded-pill w-100 fb_btn_style btn_flex_style"
           >
             <FontAwesomeIcon
               size="2x"
@@ -229,16 +229,16 @@ const LoginContent = () => {
               color="#FFF"
               className="float-left"
             />
-            <span className="d-block pt-1">Continue with Facebook</span>
+            <span className="d-block pt-1 mx-auto">Continue with Facebook</span>
           </button>
         </div>
         <div className="w-75 m-2">
           <button
             onClick={() => socialMediaLogin(GithubProvider, setError, redirect)}
-            className="btn btn-dark rounded-pill w-100"
+            className="btn btn-dark rounded-pill w-100 btn_flex_style"
           >
             <FontAwesomeIcon size="2x" icon={faGithub} className="float-left" />
-            <span className="d-block pt-1">Continue with Github</span>
+            <span className="d-block pt-1 mx-auto">Continue with Github</span>
           </button>
         </div>
       </div>
