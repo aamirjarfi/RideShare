@@ -67,9 +67,10 @@ export const signInWithEmail = async (email, password, redirect, setError) => {
   }
 };
 
-export const socialMediaLogin = async (providerName, setError) => {
+export const socialMediaLogin = async (providerName, setError, redirect) => {
   try {
     await auth.signInWithPopup(providerName);
+    await redirect()
   } catch (error) {
     const err = await error;
     const errCode = err.code;
