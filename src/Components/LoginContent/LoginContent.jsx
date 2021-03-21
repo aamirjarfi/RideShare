@@ -204,7 +204,7 @@ const LoginContent = () => {
         <div className="w-75 m-2">
           <button
             onClick={() => socialMediaLogin(GoogleProvider, setError, redirect)}
-            className="btn btn-primary rounded-pill w-100"
+            className="btn google_btn_style rounded-pill w-100"
           >
             {/* <FontAwesomeIcon size="2x" icon={faGoogle} className="float-left" /> */}
             <img
@@ -221,11 +221,12 @@ const LoginContent = () => {
             onClick={() =>
               socialMediaLogin(FacebookProvider, setError, redirect)
             }
-            className="btn btn-primary rounded-pill w-100"
+            className="btn rounded-pill w-100 fb_btn_style"
           >
             <FontAwesomeIcon
               size="2x"
               icon={faFacebook}
+              color="#FFF"
               className="float-left"
             />
             <span className="d-block pt-1">Continue with Facebook</span>
@@ -234,7 +235,7 @@ const LoginContent = () => {
         <div className="w-75 m-2">
           <button
             onClick={() => socialMediaLogin(GithubProvider, setError, redirect)}
-            className="btn btn-primary rounded-pill w-100"
+            className="btn btn-dark rounded-pill w-100"
           >
             <FontAwesomeIcon size="2x" icon={faGithub} className="float-left" />
             <span className="d-block pt-1">Continue with Github</span>
