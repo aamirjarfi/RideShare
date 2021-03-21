@@ -42,6 +42,12 @@ function App() {
           <PrivateRoute exact path="/destination/:vehicleName">
             <Destination />
           </PrivateRoute>
+          <PrivateRoute exact path="/blog">
+            <h1>Coming Soon</h1>
+          </PrivateRoute>
+          <PrivateRoute exact path="/contact">
+            <h1>Coming Soon</h1>
+          </PrivateRoute>
         </Switch>
       </conditionalSignup.Provider>
     </UserContext.Provider>
