@@ -1,5 +1,5 @@
 #home_section {
-  height: calc(100vh - 3.475rem);
+  height: calc(100vh - 3rem);
   background-image: url("./../../Resources/images/Bg.png");
   background-size: cover;
   background-repeat: no-repeat;
